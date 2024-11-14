@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container .duvidas{
+    width: 300px;
+    height: 111px;
+    color: var(--White);
+    margin-right: 60px;
+}
+
+.container .duvidas h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.container .duvidas p{
+    font-size: 15px;
+}
+
+.container .campos{
+    width: 340px;
+    height: 378px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container .campos .campo{
+    height: 35px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: var(--Cinza);
+    font-size: 15px;
+    font-weight: 700;
+    border: 1.5px solid var(--Preto);
+}
+
+.container .campos textarea.campo{
+    height: 100px;
+}
+
+.container .campos .mensagem-erro{
+    font-size: 8px;
+    color: var(--Vermelho);
+    opacity: 0;
+    margin-bottom: 6px;
+}
+
+.container .campos .mensagem-erro.mostrar {
+    opacity: 1;
+}
+
+.container .campos .obrigatorio{
+    margin: 1px 0 7px;
+}
+
+.container .campos .enviar{
+    height: 41px;
+    color: var(--White);
+    background-color: var(--Verde);
+    border-radius: 5px;
+    border: 1px solid var(--Verde);
+}
+
+.container .campos .preenchido{
+    border: 1.5px solid var(--Verde);
+}
+
+.container .campos .nao-preenchido{
+    border: 1.5px solid var(--Vermelho);
+}
